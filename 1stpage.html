@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-image: url(file:///D:/project/photo3.jpg);
+            background-size: 100%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 300px;
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+            color:aliceblue;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    
+           
+    
+        table{
+            text-align:left;
+            color: aliceblue;
+        }
+            
+        
+
+       
+        </style>
+        <script>
+            // valide email
+            function validateEmail() {
+              var email = document.getElementById("email").value;
+              var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+              if (emailRegex.test(email)) {
+                alert("Valid email address!");
+              } else {
+                alert("Invalid email address! Please enter a valid email.");
+              }
+            }
+            // finish
+          </script>
+</head>
+<body>
+
+    <div class="container" >
+        
+    <h1>Heritage City Ahmedabad</h1> 
+       
+        <table  align="center">
+            <form name="myform" onsubmit="return email();" method="post">
+                <tr>
+                    <th>Name</th>
+                    <th><input type="text" name="Name"  maxlength="20" size="20" required></th>
+                </tr>
+                
+                <tr>
+                    <th>E-Mail</th>
+                    <th><input type="email" id="email" required></th>
+                </tr>
+                <tr>
+                    <th colspan="2" align="center"><button onclick="validateEmail()">Verify</button></th>
+                </tr>
+                <tr>
+                    <th>Contact Number</th>
+                    <th><input type="tel" name="Mobile Number "  size="10" maxlength="10" required></th>
+                </tr>
+               
+                <tr>
+                    <td colspan="2" align="center"><button type="submit" value="submit"><a href="2nd.html" target="display" >Login</button></a></td>
+                </tr>
+
+            </form>
+        </table>   
+    </div> 
+</body>
+</html>

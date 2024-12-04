@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+            color: #613030;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: aliceblue;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 300px;
+            text-align: center;
+        }
+       
+    </style>  
+</head>
+<body>
+
+    <div class="container" align="center">
+    <h2>Registration Form</h2>
+    <h4>Time: 7:00 am in Moring</h4>
+    <h4>Starting point: Swaminarayan Temple, Kalupur </h4>
+    <form>
+        <table align="center">
+            <tr>
+                <td>Full Name:</td>
+            </tr>
+            <tr>
+                <td><input type="text" id="full_name" name="full_name" required></td>
+            </tr>
+            <tr>
+                <td>Contact Number:</td>
+            </tr>
+            <tr>
+                <td><input type="tel" id="contact_number" name="contact_number" required></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+            </tr>
+            <tr>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+            </tr>
+            <tr>
+                <td><input type="text" id="address" name="address" required></td>
+            </tr>
+            <tr>
+                <td>City:</td>
+            </tr>
+            <tr>
+                <td><input type="text" id="city" name="city" required></td>
+            </tr>
+            <tr>
+                <td>State:</td>
+            </tr>
+            <tr>
+                <td><input type="text" id="state" name="state" required></td>
+            </tr>
+            <tr>
+                <td>Select ID Proof:</td>
+            </tr>
+            <tr>
+                <td>
+                    <select id="id_proof" name="id_proof" required>
+                        <option value="passport">Passport</option>
+                        <option value="driver_license">Driver's License</option>
+                        <option value="aadhar_card">Aadhar Card</option>
+                        <option value="voter_id">Voter ID</option>
+                        <option value="pan_card">PAN Card</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Uplode ID Proof:</td>
+            </tr>
+            <tr>
+                <td><input type="file"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="submit">Submit</button></td>
+            </tr>
+        </table>
+    </form>
+    </div>
+</body>
+</html>
